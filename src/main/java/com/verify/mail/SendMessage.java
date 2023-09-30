@@ -21,15 +21,12 @@ import java.util.Properties;
  */
 @RestController
 public class SendMessage {
-	private static final String USERNAME = "3224886279@qq.com";
-	private static final String AUTHORIZATION = "bwbkfjnigakqdaai";
+	private static final String USERNAME = "你的邮箱地址";
+	private static final String AUTHORIZATION = "你的授权码";
 
 	private static Session getMailSession() {
 		Properties props = new Properties();
-		props.put("mail.smtp.host", "smtp.126.com");
-		//126——25
-		//163——645
-		//qq——587
+		props.put("mail.smtp.host", "smtp.qq.com");
 		props.put("mail.smtp.port", 587);
 		props.put("mail.smtp.auth", "true");
 		props.put("mail.smtp.starttls.enale", "true");
